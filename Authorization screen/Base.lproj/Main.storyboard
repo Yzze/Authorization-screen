@@ -19,18 +19,29 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7Ro-1e-hai">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkA-A1-PDR">
+                                <rect key="frame" x="120" y="110" width="150" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7Ro-1e-hai" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9ll-0f-Qnw"/>
-                            <constraint firstItem="7Ro-1e-hai" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L9n-9Q-Hy2"/>
-                            <constraint firstItem="7Ro-1e-hai" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fzq-yh-XqX"/>
-                            <constraint firstAttribute="bottom" secondItem="7Ro-1e-hai" secondAttribute="bottom" id="wi4-1c-5kt"/>
+                            <constraint firstItem="tkA-A1-PDR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="6iM-h1-2NB"/>
+                            <constraint firstItem="tkA-A1-PDR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="L3A-iG-rDe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tkA-A1-PDR" secondAttribute="bottom" constant="645" id="PbY-yD-x47"/>
+                            <constraint firstAttribute="bottom" secondItem="7Ro-1e-hai" secondAttribute="bottom" id="ame-5M-QlG"/>
+                            <constraint firstItem="7Ro-1e-hai" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bXG-U1-jeP"/>
+                            <constraint firstItem="7Ro-1e-hai" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="d8e-xA-J9m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tkA-A1-PDR" secondAttribute="trailing" constant="120" id="dkF-8W-aty"/>
+                            <constraint firstItem="7Ro-1e-hai" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lWP-CD-Ygx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addBackground" destination="7Ro-1e-hai" id="HaO-5N-0Za"/>
+                        <outlet property="loginLabel" destination="tkA-A1-PDR" id="0N8-Z8-LvA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
