@@ -26,19 +26,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZc-ef-BT3">
-                                <rect key="frame" x="65" y="197" width="260" height="45"/>
+                                <rect key="frame" x="65" y="237" width="260" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xp4-YB-d5C">
-                                <rect key="frame" x="65" y="279" width="260" height="45"/>
+                                <rect key="frame" x="65" y="299" width="260" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUB-td-stw">
                                 <rect key="frame" x="65" y="405" width="260" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="buttonLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56D-rR-AQ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbT-YB-6UB">
+                                <rect key="frame" x="65" y="463" width="260" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -59,6 +68,7 @@
                     </view>
                     <connections>
                         <outlet property="addBackground" destination="7Ro-1e-hai" id="HaO-5N-0Za"/>
+                        <outlet property="buttonForgotPassword" destination="XbT-YB-6UB" id="Jfi-iQ-8B6"/>
                         <outlet property="buttonLogin" destination="RUB-td-stw" id="1PE-zv-MgT"/>
                         <outlet property="loginLabel" destination="tkA-A1-PDR" id="0N8-Z8-LvA"/>
                         <outlet property="textFieldUserName" destination="EZc-ef-BT3" id="e8h-Sg-Q7N"/>

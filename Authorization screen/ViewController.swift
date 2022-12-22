@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldUserName: UITextField!
     @IBOutlet weak var textFieldUserPassword: UITextField!
     @IBOutlet weak var buttonLogin: UIButton!
+    @IBOutlet weak var buttonForgotPassword: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,10 +49,15 @@ class ViewController: UIViewController {
         buttonLogin.layer.shadowRadius = 10
         buttonLogin.layer.shouldRasterize = true
         buttonLogin.layer.rasterizationScale = UIScreen.main.scale
-        buttonLogin.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 45)
+        buttonLogin.titleLabel?.font = .boldSystemFont(ofSize: 50)
+        buttonLogin.configuration?.buttonSize = .large
+        
+        buttonForgotPassword.setTitle("Forgot your password?", for: .normal)
+        buttonForgotPassword.setTitleColor(.white, for: .normal)
     }
 
 }
+
 
 
 extension UITextField {
