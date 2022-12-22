@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var textFieldUserName: UITextField!
     @IBOutlet weak var textFieldUserPassword: UITextField!
+    @IBOutlet weak var buttonLogin: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
         textFieldUserName.backgroundColor = .white
         textFieldUserName.placeholder = "Login"
         textFieldUserName.setIcon("iconsUser", .left)
+        textFieldUserName.setIcon("iconsCheck", .right)
         
         textFieldUserPassword.borderStyle = .none
         textFieldUserPassword.clipsToBounds = true
@@ -34,10 +36,23 @@ class ViewController: UIViewController {
         textFieldUserPassword.backgroundColor = .white
         textFieldUserPassword.placeholder = "Password"
         textFieldUserPassword.setIcon("iconsLock", .left)
+        
+        buttonLogin.setTitle("Login", for: .normal)
+        buttonLogin.setTitleColor(.white, for: .normal)
+        buttonLogin.backgroundColor = .init(red: 69.0/255.0, green: 87.0/255.0, blue: 161.0/255.0, alpha: 0.8)
+        buttonLogin.clipsToBounds = true
+        buttonLogin.layer.cornerRadius = 20
+        buttonLogin.layer.shadowColor = UIColor.black.cgColor
+        buttonLogin.layer.shadowOpacity = 0.3
+        buttonLogin.layer.shadowOffset = .zero
+        buttonLogin.layer.shadowRadius = 10
+        buttonLogin.layer.shouldRasterize = true
+        buttonLogin.layer.rasterizationScale = UIScreen.main.scale
+        buttonLogin.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 45)
     }
 
-
 }
+
 
 extension UITextField {
     enum Direction {
