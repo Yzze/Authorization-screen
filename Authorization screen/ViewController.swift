@@ -15,13 +15,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldUserPassword: UITextField!
     @IBOutlet weak var buttonLogin: UIButton!
     @IBOutlet weak var buttonForgotPassword: UIButton!
+    @IBOutlet weak var labelConnectWith: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.        
         loginLabel.text = "Login"
         loginLabel.font = UIFont(name: "ChalkboardSE-Bold", size: 32)
         loginLabel.textColor = .white
+        
+        labelConnectWith.text = "or connect with"
+        labelConnectWith.font = .systemFont(ofSize: 13, weight: .bold)
+        labelConnectWith.textColor = .gray
+        labelConnectWith.textAlignment = .center
         
         textFieldUserName.borderStyle = .none
         textFieldUserName.clipsToBounds = true
