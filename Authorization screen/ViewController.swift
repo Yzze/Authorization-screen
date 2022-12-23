@@ -29,12 +29,12 @@ class ViewController: UIViewController {
         loginLabel.textColor = .white
         
         labelConnectWith.text = "or connect with"
-        labelConnectWith.font = .systemFont(ofSize: 13, weight: .bold)
+        labelConnectWith.font = UIFont(name: "ChalkboardSE-Light", size: 13)
         labelConnectWith.textColor = .gray
         labelConnectWith.textAlignment = .center
         
         labelDontHaveAccount.text = "Dont have account?"
-        labelDontHaveAccount.font = .systemFont(ofSize: 15, weight: .bold)
+        labelDontHaveAccount.font = UIFont(name: "ChalkboardSE-Bold", size: 15)
         labelDontHaveAccount.textColor = .gray
         
         textFieldUserName.borderStyle = .none
@@ -63,11 +63,11 @@ class ViewController: UIViewController {
         buttonLogin.layer.shadowRadius = 10
         buttonLogin.layer.shouldRasterize = true
         buttonLogin.layer.rasterizationScale = UIScreen.main.scale
-        buttonLogin.titleLabel?.font = .boldSystemFont(ofSize: 50)
-        buttonLogin.configuration?.buttonSize = .large
+        buttonLogin.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 15)
         
         buttonForgotPassword.setTitle("Forgot your password?", for: .normal)
         buttonForgotPassword.setTitleColor(.white, for: .normal)
+        buttonForgotPassword.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 15)
         
         buttonFacebook.setTitle("Facebook", for: .normal)
         buttonFacebook.setTitleColor(.white, for: .normal)
@@ -75,6 +75,8 @@ class ViewController: UIViewController {
         buttonFacebook.clipsToBounds = true
         buttonFacebook.layer.cornerRadius = 20
         buttonFacebook.setImage(UIImage(named: "iconsFacebook"), for: .normal)
+        buttonFacebook.configuration?.imagePadding = 15
+        buttonFacebook.imageView?.tintColor = .white
         
         buttonTwitter.setTitle("Twitter", for: .normal)
         buttonTwitter.setTitleColor(.white, for: .normal)
@@ -82,8 +84,12 @@ class ViewController: UIViewController {
         buttonTwitter.clipsToBounds = true
         buttonTwitter.layer.cornerRadius = 20
         buttonTwitter.setImage(UIImage(named: "iconsTwitter"), for: .normal)
+        buttonTwitter.imageView?.tintColor = .white
+        buttonTwitter.configuration?.imagePadding = 15
         
         buttonSignUp.setTitle("Sign up", for: .normal)
+        buttonSignUp.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 15)
+        buttonSignUp.titleLabel?.textAlignment = .left
     }
 
 }
