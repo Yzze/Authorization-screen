@@ -99,6 +99,13 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ln-Wv-wRx">
+                                <rect key="frame" x="78" y="766" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -133,6 +140,7 @@
                         <outlet property="buttonLogin" destination="RUB-td-stw" id="1PE-zv-MgT"/>
                         <outlet property="buttonTwitter" destination="zKY-BD-4aB" id="8Yx-c8-9Cm"/>
                         <outlet property="labelConnectWith" destination="j8o-Bh-MIj" id="tyY-Bj-UCd"/>
+                        <outlet property="labelDontHaveAccount" destination="3Ln-Wv-wRx" id="sxI-Ky-KNk"/>
                         <outlet property="loginLabel" destination="tkA-A1-PDR" id="0N8-Z8-LvA"/>
                         <outlet property="textFieldUserName" destination="EZc-ef-BT3" id="e8h-Sg-Q7N"/>
                         <outlet property="textFieldUserPassword" destination="Xp4-YB-d5C" id="cY1-Jn-NFu"/>

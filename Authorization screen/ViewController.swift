@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelConnectWith: UILabel!
     @IBOutlet weak var buttonFacebook: UIButton!
     @IBOutlet weak var buttonTwitter: UIButton!
+    @IBOutlet weak var labelDontHaveAccount: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,10 @@ class ViewController: UIViewController {
         labelConnectWith.font = .systemFont(ofSize: 13, weight: .bold)
         labelConnectWith.textColor = .gray
         labelConnectWith.textAlignment = .center
+        
+        labelDontHaveAccount.text = "Dont have account?"
+        labelDontHaveAccount.font = .systemFont(ofSize: 15, weight: .bold)
+        labelDontHaveAccount.textColor = .gray
         
         textFieldUserName.borderStyle = .none
         textFieldUserName.clipsToBounds = true
