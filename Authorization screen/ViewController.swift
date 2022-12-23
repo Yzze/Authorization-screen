@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonFacebook: UIButton!
     @IBOutlet weak var buttonTwitter: UIButton!
     @IBOutlet weak var labelDontHaveAccount: UILabel!
+    @IBOutlet weak var buttonSignUp: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +82,8 @@ class ViewController: UIViewController {
         buttonTwitter.clipsToBounds = true
         buttonTwitter.layer.cornerRadius = 20
         buttonTwitter.setImage(UIImage(named: "iconsTwitter"), for: .normal)
+        
+        buttonSignUp.setTitle("Sign up", for: .normal)
     }
 
 }
