@@ -87,6 +87,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJ9-2s-A4l">
+                                <rect key="frame" x="24" y="702" width="150" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKY-BD-4aB">
+                                <rect key="frame" x="211" y="702" width="150" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -116,8 +128,10 @@
                     </view>
                     <connections>
                         <outlet property="addBackground" destination="7Ro-1e-hai" id="HaO-5N-0Za"/>
+                        <outlet property="buttonFacebook" destination="sJ9-2s-A4l" id="hX6-jW-xeh"/>
                         <outlet property="buttonForgotPassword" destination="XbT-YB-6UB" id="Jfi-iQ-8B6"/>
                         <outlet property="buttonLogin" destination="RUB-td-stw" id="1PE-zv-MgT"/>
+                        <outlet property="buttonTwitter" destination="zKY-BD-4aB" id="8Yx-c8-9Cm"/>
                         <outlet property="labelConnectWith" destination="j8o-Bh-MIj" id="tyY-Bj-UCd"/>
                         <outlet property="loginLabel" destination="tkA-A1-PDR" id="0N8-Z8-LvA"/>
                         <outlet property="textFieldUserName" destination="EZc-ef-BT3" id="e8h-Sg-Q7N"/>

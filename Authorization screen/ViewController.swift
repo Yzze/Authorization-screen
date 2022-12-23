@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonLogin: UIButton!
     @IBOutlet weak var buttonForgotPassword: UIButton!
     @IBOutlet weak var labelConnectWith: UILabel!
+    @IBOutlet weak var buttonFacebook: UIButton!
+    @IBOutlet weak var buttonTwitter: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +62,20 @@ class ViewController: UIViewController {
         
         buttonForgotPassword.setTitle("Forgot your password?", for: .normal)
         buttonForgotPassword.setTitleColor(.white, for: .normal)
+        
+        buttonFacebook.setTitle("Facebook", for: .normal)
+        buttonFacebook.setTitleColor(.white, for: .normal)
+        buttonFacebook.backgroundColor = .init(red: 30.0/255.0, green: 167.0/255.0, blue: 235.0/255.0, alpha: 0.8)
+        buttonFacebook.clipsToBounds = true
+        buttonFacebook.layer.cornerRadius = 20
+        buttonFacebook.setImage(UIImage(named: "iconsFacebook"), for: .normal)
+        
+        buttonTwitter.setTitle("Twitter", for: .normal)
+        buttonTwitter.setTitleColor(.white, for: .normal)
+        buttonTwitter.backgroundColor = .init(red: 11.0/255.0, green: 4.0/255.0, blue: 105.0/255.0, alpha: 0.8)
+        buttonTwitter.clipsToBounds = true
+        buttonTwitter.layer.cornerRadius = 20
+        buttonTwitter.setImage(UIImage(named: "iconsTwitter"), for: .normal)
     }
 
 }
@@ -86,3 +102,4 @@ extension UITextField {
         
     }
 }
+
