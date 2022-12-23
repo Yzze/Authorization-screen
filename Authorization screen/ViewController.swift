@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.        
+        
         loginLabel.text = "Login"
         loginLabel.font = UIFont(name: "ChalkboardSE-Bold", size: 32)
         loginLabel.textColor = .white
