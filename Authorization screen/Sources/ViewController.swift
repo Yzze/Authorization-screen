@@ -23,20 +23,38 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        labelLogin()
+        connectWithLabel()
+        dontHaveAccountLabel()
+        userNameTextField()
+        userPasswordTextField()
+        loginButton()
+        forgotPasswordButton()
+        facebookButton()
+        twitterButton()
+        signUpButton()
+    }
+    
+    func labelLogin() {
         loginLabel.text = "Login"
         loginLabel.font = UIFont(name: "ChalkboardSE-Bold", size: 32)
         loginLabel.textColor = .white
-        
+    }
+    
+    func connectWithLabel() {
         labelConnectWith.text = "or connect with"
         labelConnectWith.font = UIFont(name: "ChalkboardSE-Light", size: 13)
         labelConnectWith.textColor = .gray
         labelConnectWith.textAlignment = .center
-        
+    }
+    
+    func dontHaveAccountLabel() {
         labelDontHaveAccount.text = "Dont have account?"
         labelDontHaveAccount.font = UIFont(name: "ChalkboardSE-Bold", size: 15)
         labelDontHaveAccount.textColor = .gray
-        
+    }
+    
+    func userNameTextField() {
         textFieldUserName.borderStyle = .none
         textFieldUserName.clipsToBounds = true
         textFieldUserName.layer.cornerRadius = 20
@@ -44,14 +62,18 @@ class ViewController: UIViewController {
         textFieldUserName.placeholder = "Login"
         textFieldUserName.setIcon("iconsUser", .left)
         textFieldUserName.setIcon("iconsCheck", .right)
-        
+    }
+    
+    func userPasswordTextField() {
         textFieldUserPassword.borderStyle = .none
         textFieldUserPassword.clipsToBounds = true
         textFieldUserPassword.layer.cornerRadius = 20
         textFieldUserPassword.backgroundColor = .white
         textFieldUserPassword.placeholder = "Password"
         textFieldUserPassword.setIcon("iconsLock", .left)
-        
+    }
+    
+    func loginButton() {
         buttonLogin.setTitle("Login", for: .normal)
         buttonLogin.setTitleColor(.white, for: .normal)
         buttonLogin.backgroundColor = .init(red: 69.0/255.0, green: 87.0/255.0, blue: 161.0/255.0, alpha: 0.8)
@@ -64,11 +86,15 @@ class ViewController: UIViewController {
         buttonLogin.layer.shouldRasterize = true
         buttonLogin.layer.rasterizationScale = UIScreen.main.scale
         buttonLogin.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 15)
-        
+    }
+    
+    func forgotPasswordButton() {
         buttonForgotPassword.setTitle("Forgot your password?", for: .normal)
         buttonForgotPassword.setTitleColor(.white, for: .normal)
         buttonForgotPassword.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 15)
-        
+    }
+    
+    func facebookButton() {
         buttonFacebook.setTitle("Facebook", for: .normal)
         buttonFacebook.setTitleColor(.white, for: .normal)
         buttonFacebook.backgroundColor = .init(red: 30.0/255.0, green: 167.0/255.0, blue: 235.0/255.0, alpha: 0.8)
@@ -77,7 +103,9 @@ class ViewController: UIViewController {
         buttonFacebook.setImage(UIImage(named: "iconsFacebook"), for: .normal)
         buttonFacebook.configuration?.imagePadding = 15
         buttonFacebook.imageView?.tintColor = .white
-        
+    }
+    
+    func twitterButton() {
         buttonTwitter.setTitle("Twitter", for: .normal)
         buttonTwitter.setTitleColor(.white, for: .normal)
         buttonTwitter.backgroundColor = .init(red: 11.0/255.0, green: 4.0/255.0, blue: 105.0/255.0, alpha: 0.8)
@@ -86,7 +114,9 @@ class ViewController: UIViewController {
         buttonTwitter.setImage(UIImage(named: "iconsTwitter"), for: .normal)
         buttonTwitter.imageView?.tintColor = .white
         buttonTwitter.configuration?.imagePadding = 15
-        
+    }
+    
+    func signUpButton() {
         buttonSignUp.setTitle("Sign up", for: .normal)
         buttonSignUp.titleLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 15)
         buttonSignUp.titleLabel?.textAlignment = .left
